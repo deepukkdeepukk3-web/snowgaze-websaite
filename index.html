@@ -1,1 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SNOWGAZE | House Painting Services</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
 
+<header class="header">
+  <div class="logo">SNOWGAZE</div>
+  <nav class="navbar">
+    <a href="#home">Home</a><a href="#about">About</a><a href="#services">Services</a>
+    <a href="#portfolio">Portfolio</a><a href="#booking">Booking</a><a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<section id="home" class="hero">
+  <div class="hero-content">
+    <p class="small-title">PROFESSIONAL HOUSE PAINTING</p>
+    <h1>Transform Your<br>Home With Colour</h1>
+    <p>Professional interior and exterior painting services with beautiful finishing and quality workmanship.</p>
+    <div class="hero-buttons">
+      <a href="#portfolio" class="btn">View Our Work</a>
+      <a href="#booking" class="btn outline">Book a Service</a>
+    </div>
+  </div>
+</section>
+
+<section id="about" class="section">
+  <div class="section-title"><span>ABOUT US</span><h2>We Paint Your Dreams</h2></div>
+  <div class="about-content">
+    <div class="about-image"><img src="images/about-house.jpg" alt="House painting"></div>
+    <div class="about-text">
+      <h3>Professional House Painting Service</h3>
+      <p>SNOWGAZE provides professional house painting solutions for residential and commercial properties. We focus on quality materials, neat workmanship and beautiful finishing.</p>
+      <div class="features"><div>✓ Quality Finishing</div><div>✓ Professional Team</div><div>✓ Premium Materials</div><div>✓ Timely Service</div></div>
+    </div>
+  </div>
+</section>
+
+<section id="services" class="section grey">
+  <div class="section-title"><span>OUR SERVICES</span><h2>What We Do</h2></div>
+  <div class="cards">
+    <div class="card"><div class="icon">🏠</div><h3>Exterior Painting</h3><p>Fresh, attractive and durable exterior finishes.</p></div>
+    <div class="card"><div class="icon">🎨</div><h3>Interior Painting</h3><p>Beautiful interior colours for a fresh modern look.</p></div>
+    <div class="card"><div class="icon">✨</div><h3>Texture Painting</h3><p>Modern wall textures and designer finishes.</p></div>
+    <div class="card"><div class="icon">🔄</div><h3>Repainting</h3><p>Refresh old walls with smooth professional finishing.</p></div>
+  </div>
+</section>
+
+<section id="portfolio" class="section">
+  <div class="section-title"><span>OUR WORK</span><h2>House Painting Portfolio</h2></div>
+  <div class="portfolio-grid">
+    <div class="portfolio-item"><img src="images/project1.jpg" alt="Modern Villa"><div><h3>Modern Villa</h3><p>Exterior Painting</p></div></div>
+    <div class="portfolio-item"><img src="images/project2.jpg" alt="Luxury Home"><div><h3>Luxury Home</h3><p>Interior Painting</p></div></div>
+    <div class="portfolio-item"><img src="images/project3.jpg" alt="Family Home"><div><h3>Family Home</h3><p>Exterior & Interior</p></div></div>
+    <div class="portfolio-item"><img src="images/project4.jpg" alt="Premium Residence"><div><h3>Premium Residence</h3><p>Designer Painting</p></div></div>
+  </div>
+</section>
+
+<section id="booking" class="section grey">
+  <div class="section-title"><span>BOOKING & PAYMENT</span><h2>Book Your Painting Service</h2></div>
+  <div class="booking-wrap">
+    <form id="bookingForm" class="booking-form">
+      <input id="name" type="text" placeholder="Customer Name" required>
+      <input id="phone" type="tel" placeholder="Phone Number" required>
+      <select id="service" required>
+        <option value="">Select Service</option>
+        <option>Exterior Painting</option>
+        <option>Interior Painting</option>
+        <option>Texture Painting</option>
+        <option>Repainting</option>
+      </select>
+      <input id="amount" type="number" min="1" placeholder="Advance Amount (₹)" required>
+      <select id="paymentMethod" required>
+        <option value="">Select Payment Method</option>
+        <option value="razorpay">Razorpay / UPI / Cards</option>
+        <option value="upi">UPI / Google Pay / PhonePe</option>
+        <option value="cash">Cash on Service</option>
+      </select>
+      <button class="btn pay" type="submit">Continue to Payment</button>
+      <p class="note">Payment is in demo mode until a real payment gateway account and server-side integration are configured.</p>
+    </form>
+    <div id="receipt" class="receipt hidden"></div>
+  </div>
+</section>
+
+<section class="section dark">
+  <div class="section-title"><span>WHY SNOWGAZE</span><h2>Why Choose Us?</h2></div>
+  <div class="cards">
+    <div class="dark-card"><b>01</b><h3>Quality Work</h3><p>Professional workmanship with attention to detail.</p></div>
+    <div class="dark-card"><b>02</b><h3>Trusted Service</h3><p>Reliable service from start to finish.</p></div>
+    <div class="dark-card"><b>03</b><h3>Clean Finishing</h3><p>Neat and attractive finishing for every project.</p></div>
+    <div class="dark-card"><b>04</b><h3>Customer Focus</h3><p>We work according to your needs and preferences.</p></div>
+  </div>
+</section>
+
+<section id="contact" class="section grey">
+  <div class="section-title"><span>CONTACT US</span><h2>Let's Paint Your Home</h2></div>
+  <div class="contact-container">
+    <div class="contact-info"><h3>SNOWGAZE</h3><p>Professional House Painting Services</p><p>📍 Thrissur, Kerala</p><p>📞 +91 XXXXX XXXXX</p><p>✉️ info@snowgaze.com</p></div>
+    <form id="contactForm" class="contact-form">
+      <input type="text" placeholder="Your Name" required><input type="tel" placeholder="Phone Number" required>
+      <input type="email" placeholder="Email Address"><textarea rows="5" placeholder="Tell us about your painting project..."></textarea>
+      <button type="submit">Send Enquiry</button>
+    </form>
+  </div>
+</section>
+
+<footer class="footer"><div class="logo">SNOWGAZE</div><p>Professional House Painting Services</p><div class="social-links"><a href="#">Instagram</a><a href="#">Facebook</a><a href="#">YouTube</a></div><p>© 2026 SNOWGAZE. All Rights Reserved.</p></footer>
+<script src="script.js"></script>
+</body>
+</html>
